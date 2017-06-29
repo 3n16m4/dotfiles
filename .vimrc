@@ -1,3 +1,22 @@
+" vim-plug stuff
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'whatyouhide/vim-gotham'
+
+" Initialize plugin system
+call plug#end()
+
+" vim-airline stuff
+set laststatus=2
+" powerline symbols for air-line
+let g:Powerline_symbols = "fancy"
+" vim-airline themes
+let g:airline_theme='ravenpower'
+
+" enable clipboard support
+set clipboard=unnamed
 " set UTF-8 encoding
 set enc=utf-8
 set fenc=utf-8
@@ -17,7 +36,7 @@ set textwidth=120
 " turn syntax highlighting on
 set t_Co=256
 syntax on
-" colorscheme wombat256
+colorscheme gotham
 " turn line numbers on
 set number
 " highlight matching braces
